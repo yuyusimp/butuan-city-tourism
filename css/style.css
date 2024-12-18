@@ -106,97 +106,56 @@ input.form-control, textarea.form-control {
 /*** Topbar End ***/
 
 
-/*** Navbar Start ***/
-
+/*** General Navbar Styling ***/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .navbar-brand img {
     max-height: 50px;
     width: auto;
-    /* Ensures the logo doesn't stretch */
 }
 
-.navbar .navbar-nav {
-    padding: 15px 0;
+.navbar-brand h1.brand-title {
+    font-size: calc(1.3rem + 0.5vw);
+    margin: 0;
+    white-space: nowrap;
 }
 
-.navbar .navbar-nav .nav-link {
-    padding: 7px;
-    color: var(--bs-white);
-    font-size: 15px;
-    outline: none;
+.navbar-toggler {
+    margin-left: 10px; /* Adds spacing for cleaner alignment */
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--bs-warning) !important;
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "font awesome 5 free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        visibility: hidden;
-        top: 100%;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
-        transition: .5s;
-        opacity: 0;
-    }
-}
-
-.navbar .nav-item:hover .dropdown-menu {
-    transform: rotateX(0deg);
-    visibility: visible;
-    transition: .5s;
-    opacity: 1;
-}
-
-/*** Navbar End ***/
-
-/*** Mobile & Tablet Adjustments ***/
-
-@media (max-width: 767px) {
-    .navbar-brand img {
-        max-height: 40px; /* Reduce logo size on mobile */
-    }
-
-    .navbar-brand h1 {
-        font-size: 1.2rem; /* Adjust the text size for mobile */
+/*** Hide Logo and Adjust Toggle for Small Screens ***/
+@media (max-width: 360px) {
+    .navbar-brand .logo-img,  /* Hide logo image */
+    .navbar-brand .brand-title { /* Hide text title */
+        display: none;
     }
 
     .navbar-toggler {
-        order: -1; /* Ensure the toggle button appears before the logo */
+        display: block; /* Show the toggler bar */
+        margin-left: 0; /* Center if needed */
     }
 
+    .navbar-toggler-icon {
+        color: white;
+    }
+}
+
+/*** Mobile Adjustments: General ***/
+@media (max-width: 767px) {
     .navbar-collapse {
-        margin-top: 10px; /* Add margin to navbar when collapsed */
+        text-align: center;
     }
 
     .navbar .navbar-nav .nav-link {
-        font-size: 14px; /* Adjust text size for smaller screens */
-    }
-
-    /* Ensure the navbar is fully responsive */
-    .navbar .navbar-nav {
-        text-align: center;
+        font-size: 14px;
+        padding: 10px 0;
     }
 }
-
-@media (max-width: 992px) {
-    .navbar-brand h1 {
-        font-size: 1.5rem; /* Adjust text size for medium screens */
-    }
-}
-
-/*** End of Mobile & Tablet Adjustments ***/
 
 
 

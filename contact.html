@@ -44,42 +44,42 @@
         <!-- Navbar Start -->
         <div class="container-fluid" style="background-color: rgb(7, 7, 82);">
             <div class="container">
-                <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <!-- Moved the navbar toggler before the logo and title -->
-                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <!-- Navbar Brand (Logo and Text) -->
-                    <a href="" class="navbar-brand d-flex align-items-center">
-                        <img src="img/bct-logo.png" alt="Logo" class="me-2" style="max-height: 50px;">
-                        <h1 class="text-white fw-bold mb-0" style="font-size: calc(1.2rem + 1vw);">
-                            Butuan City<span class="text" style="color: gold;">Tourism</span>
+                <nav class="navbar navbar-dark navbar-expand-lg d-flex align-items-center py-2">
+                    <!-- Navbar Brand: Logo and Text -->
+                    <a href="#" class="navbar-brand d-flex align-items-center logo-container">
+                        <img src="img/bct-logo.png" alt="Logo" class="me-2 logo-img" style="max-height: 50px;">
+                        <h1 class="text-white fw-bold mb-0 brand-title">
+                            Butuan City<span style="color: gold;">Tourism</span>
                         </h1>
                     </a>
-        
-                    <!-- Collapsible Navbar Links -->
-                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="update-events.html" class="nav-item nav-link">Updates & Events</a>
-                            <div class="nav-item dropdown">
+
+                    <!-- Navbar Toggler -->
+                    <button class="navbar-toggler ms-auto menu-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="update-events.html" class="nav-link">Updates & Events</a></li>
+                            <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Visitors Guide</a>
-                                <div class="dropdown-menu rounded bg-warning">
-                                    <a href="travel-tips.html" class="dropdown-item">Travel Tips</a>
-                                    <a href="attrac.html" class="dropdown-item">Attractions & Important Landmarks</a>
-                                    <a href="todo.html" class="dropdown-item">Things to do while in Butuan</a>
-                                    <a href="wts.html" class="dropdown-item">Where to Stay</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
+                                <ul class="dropdown-menu">
+                                    <li><a href="travel-tips.html" class="dropdown-item">Travel Tips</a></li>
+                                    <li><a href="attrac.html" class="dropdown-item">Attractions</a></li>
+                                    <li><a href="todo.html" class="dropdown-item">Things to do</a></li>
+                                    <li><a href="wts.html" class="dropdown-item">Where to Stay</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </div>
-        <!-- Navbar End -->  
+        <!-- Navbar End --> 
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
