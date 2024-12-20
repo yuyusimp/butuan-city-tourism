@@ -788,6 +788,21 @@ input.form-control, textarea.form-control {
     .testimonial-carousel .owl-dot.active {
         width: 20px;
     }
+    /* See Less Button */
+    .see-less-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--bs-primary);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 12px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 20;
+    }
 }
 
 
