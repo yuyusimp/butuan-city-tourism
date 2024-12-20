@@ -698,16 +698,58 @@ input.form-control, textarea.form-control {
 
 /*** Testimonial Start ***/
 
+/* General Testimonial Item Styles */
 .testimonial-item {
     background: #ffffff;
+    height: 450px; /* Consistent height for all items */
+    overflow: hidden; /* Hide excess content */
+    position: relative; /* For positioning the 'See More' button */
+    transition: height 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
 
+.testimonial-item.expanded {
+    height: auto; /* Allow full height when expanded */
+}
+
+/* 'See More' Button */
+.see-more-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--bs-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Button shadow */
+    display: none; /* Hidden by default */
+    z-index: 20; /* Ensure it's above other elements */
+}
+
+.testimonial-item:hover .see-more-btn {
+    display: block; /* Show on hover */
+}
+
+/* Testimonial Carousel Styles */
+.testimonial-carousel {
+    position: relative; /* Relative positioning for dots */
+    padding-top: 40px; /* Space for dots above carousel */
 }
 
 .testimonial-carousel .owl-dots {
-    margin-top: 15px;
+    margin: 0; /* Remove extra margin */
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    position: absolute; /* Position dots relative to carousel */
+    top: 0; /* Place at the top */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure dots are above the content */
 }
 
 .testimonial-carousel .owl-dot {
@@ -716,31 +758,38 @@ input.form-control, textarea.form-control {
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    background: #c1dad0;
-    border-radius: 15px;
-    transition: .5s;
+    background: #c1dad0; /* Default dot color */
+    border-radius: 50%; /* Circular dots */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 .testimonial-carousel .owl-dot.active {
-    width: 30px;
-    background: var(--bs-primary);
+    width: 30px; /* Elongated active dot */
+    background: var(--bs-primary); /* Highlighted active dot color */
 }
 
-.testimonial-carousel .owl-item.center {
-    position: relative;
-    z-index: 1;
+/* Additional Improvements for Responsiveness */
+@media (max-width: 768px) {
+    .testimonial-item {
+        height: auto; /* Let the height adjust for smaller screens */
+    }
+
+    .see-more-btn {
+        bottom: 5px; /* Adjust button position */
+        right: 5px;
+        font-size: 10px; /* Smaller font for smaller screens */
+    }
+
+    .testimonial-carousel .owl-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .testimonial-carousel .owl-dot.active {
+        width: 20px;
+    }
 }
 
-.testimonial-carousel .owl-item .testimonial-item {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: #FFFFFF !important;
-    box-shadow: 0 0 30px #DDDDDD;
-}
-
-/*** Testimonial End ***/
 
 
 /*** Contact Start ***/
