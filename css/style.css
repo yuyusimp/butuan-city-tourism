@@ -345,7 +345,6 @@ input.form-control, textarea.form-control {
     top: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
     transition: .5s;
 }
 
@@ -375,9 +374,7 @@ input.form-control, textarea.form-control {
     color: rgb(7, 7, 82) !important;
 }
 
-.services-item:hover .services-content-icon p {
-    color: var(--bs-white);
-}
+
 
 /*** Services End ***/
 
@@ -541,7 +538,7 @@ input.form-control, textarea.form-control {
 }
 
 .blog-item:hover .blog-image-container::after {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); /* Darken the gradient on hover */
+    background: linear-gradient(to bottom, rgba(3, 3, 3, 0), rgba(255, 255, 255, 0)); /* Darken the gradient on hover */
 }
 
 /* Span hover effect */
@@ -950,3 +947,16 @@ input.form-control, textarea.form-control {
 .expanded {
     max-height: none;
 }
+.project-img img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 250px; /* Set a uniform height for all images */
+    object-fit: cover; /* Crops the image to fit the dimensions without stretching */
+    border-radius: 10px; /* Optional: Add consistent rounding to match the design */
+}
+.blog-image-container img {
+    width: 100%; /* Ensures the image spans the full width of its container */
+    height: 250px; /* Set a uniform height for all images */
+    object-fit: cover; /* Ensures the image is cropped to fit without distortion */
+    border-radius: 5px 5px 0 0; /* Keeps the rounded corners consistent with the container */
+}
+
