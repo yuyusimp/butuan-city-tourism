@@ -865,7 +865,7 @@ input.form-control, textarea.form-control {
 }
 
 .footer .hightech-link a:hover {
-    background: var(--bs-secondary);
+    background: var(--bs-warning);
     border: 0;
 }
 
