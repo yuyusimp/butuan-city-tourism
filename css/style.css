@@ -128,6 +128,10 @@ input.form-control, textarea.form-control {
     margin-left: 10px; /* Adds spacing for cleaner alignment */
 }
 
+.nav-item .nav-link:hover{
+    color:  var(--bs-warning);
+}
+
 /*** Hide Logo and Adjust Toggle for Small Screens ***/
 @media (max-width: 360px) {
     .navbar-brand .logo-img,  /* Hide logo image */
@@ -902,8 +906,7 @@ input.form-control, textarea.form-control {
 /*** Footer Start ***/
 
 .footer {
-    background-color: rgb(7, 7, 82);
-    color: white;
+        color: white;
 }
 
 /* Centering all links and items in the footer */
@@ -919,13 +922,14 @@ input.form-control, textarea.form-control {
     transition: .5s;
 }
 
-.footer .short-link a:hover,
+.footer .contact-link a:hover,
+.footer .navi-link a:hover,
 .footer .help-link a:hover,
 .footer .contact-link a:hover {
-    letter-spacing: 1px;
+    color: var(--bs-warning);
 }
 
-.footer .hightech-link a:hover {
+.footer .social-link a:hover {
     background: var(--bs-warning);
     border: 0;
 }

@@ -47,7 +47,7 @@
         <!-- Spinner Start -->
         <div id="loading" class="loading-screen">
             <div class="loading-content">
-                <img src="img/bct-logo.png" alt="Loading Logo" class="loading-logo">
+                <img src="img/Logo green.png" alt="Loading Logo" class="loading-logo">
                 <div class="spinner"></div>
             </div>
         </div>
@@ -55,14 +55,14 @@
         <!-- Topbar End -->
 
         <!-- Navbar Start -->
-        <div class="container-fluid" style="background-color: rgb(7, 7, 82);">
+        <div class="container-fluid" style="background-color: #11578F;">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg d-flex align-items-center py-2">
                     <!-- Navbar Brand: Logo and Text -->
                     <a href="#" class="navbar-brand d-flex align-items-center logo-container">
-                        <img src="img/bct-logo.png" alt="Logo" class="me-2 logo-img" style="max-height: 50px;">
-                        <h1 class="text-white fw-bold mb-0 brand-title">
-                            Butuan City<span style="color: gold;">Tourism</span>
+                        <img src="img/Logo green.png" alt="Logo" class="me-2 logo-img" style="max-height: 50px;">
+                        <h1 class="fw-bold mb-0 brand-title"  style="color: white;">
+                            Butuan City<span style="color: #6EBC45;">Tourism</span>
                         </h1>
                     </a>
 
@@ -94,8 +94,6 @@
             </div>
         </div>
         <!-- Navbar End -->
-
-        <!-- Navbar End -->
         <!--Carousel start -->
         <div class="container-fluid px-0">
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
@@ -103,7 +101,7 @@
                     <div class="carousel-item active" style="background: url('img/Balangay_Voyage_1.jpg') center center no-repeat; background-size: cover; height: 100vh;">
                         <div class="carousel-caption">
                             <div class="container carousel-content text-center">
-                                <h1 class="text-white display-1 mb-4">BUTUAN: HOME OF THE BALANGAYS</h1>
+                                <h1 class="display-1 mb-4" style="color: white;">BUTUAN: HOME OF THE BALANGAYS</h1>
                                 
                                 <!-- Responsive Buttons -->
                                 <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
@@ -127,20 +125,24 @@
         
         <!-- Carousel End -->
         <!-- About Start -->
-        <div class="container-fluid py-5 mb-5">
-            <div class="container pt-5">
+        <div class="container-fluid py-5 mb-5 position-relative overflow-hidden" style="background-color: #11578F;">
+
+            <!-- Background image (absolute layer) -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" 
+                 style="background-image: url('img/background-boat.png'); background-repeat: no-repeat; background-position: right center; background-size: contain; z-index: 0;">
+            </div>
+        
+            <!-- Foreground content (z-index above background) -->
+            <div class="container pt-5 position-relative" style="z-index: 1;">
                 <div class="row g-5">
                     <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                         <div class="h-100 position-relative">
-                            <img src="img/cathedral.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
-                            <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                                <img src="img/festival.jpg" class="img-fluid w-100 rounded" alt="">
-                            </div>
+                            <img src="img/guingona-park.jpg" class="img-fluid h-150px w-auto rounded" alt="Butuan City">
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h1 class="mb-4 ">WELCOME TO BUTUAN!</h1>
-                        <p class="">Welcome to Butuan City, a dynamic hub where the past and present seamlessly intertwine. Known as the "Historic City of the Philippines," Butuan proudly showcases its ancient roots with the legendary Balangay boats and archaeological treasures. Beyond its rich history, the city offers a thriving urban charm with diverse culinary delights, vibrant festivals, and welcoming locals. </p>
+                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s" style="color: rgb(255, 255, 255); font-size: larger;">
+                        <h1 class="mb-4" style="color: rgb(255, 255, 255);">WELCOME TO <br><strong>BUTUAN CITY</strong></h1>
+                        <p> Welcome to Butuan City, a dynamic hub where the past and present seamlessly intertwine. Known as the "Historic City of the Philippines," Butuan proudly showcases its ancient roots with the legendary Balangay boats and archaeological treasures. Beyond its rich history, the city offers a thriving urban charm with diverse culinary delights, vibrant festivals, and welcoming locals.</p>
                         <p class="mb-4">Nature enthusiasts can explore scenic rivers, lush landscapes, and captivating sunsets, while adventurers can dive into the city’s outdoor experiences. Whether you're a history buff, foodie, or thrill-seeker, Butuan City promises unforgettable moments and stories to take home.</p>
                         <a href="about.html" class="btn rounded-pill btn-danger px-5 py-3 text-white">More Details</a>
                     </div>
@@ -149,22 +151,25 @@
         </div>
         <!-- About End -->
 
+        <!--Popular Destinations Start-->
+        
+        <!--Popular Destinations End-->
 
         <!-- Services Start -->
-        <div class="container-fluid services py-5" style="background-color:#192a3d;">
+        <div class="container-fluid services py-5 h-300" style="background-color:#192a3d;">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h1 class="text-white">Tourism Updates</h1>
+                    <h1 class="" style="color: white;">Tourism Updates</h1>
                 </div>
                 <div class="row g-5 services-inner">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <img src="img/mutya.jpg" class="img-fluid w-100 rounded" alt="">
-                                    <p class="mb-2 py-5">𝗠𝗨𝗧𝗬𝗔 𝗛𝗢𝗡𝗚 𝗕𝗨𝗧𝗨𝗔𝗡 𝟮𝟬𝟮𝟱!!</p>
+                                    <img src="img/mutya-last-screening.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <p class="mb-2 py-5 fw-bold">MUTYA HONG BUTUAN 2025!!</p>
                                 </div>
-                                
+                                <a href="update-events.html" class="btn rounded-pill btn-danger px-5 py-3 text-white">See more</a>
                             </div>
                         </div>
                     </div>
@@ -172,9 +177,10 @@
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <img src="img/tiktok.jpg" class="img-fluid w-100 rounded" alt="">
-                                    <p class="mb-2 py-5">𝐌𝐄𝐄𝐓 𝐌𝐄 𝐀𝐓 𝐓𝐇𝐄 𝐒𝐓𝐀𝐑𝐒 𝐓𝐈𝐊𝐓𝐎𝐊 𝐃𝐀𝐍𝐂𝐄 𝐂𝐎𝐌𝐏𝐄𝐓𝐈𝐓𝐈𝐎𝐍</p>
+                                    <img src="img/balik-butuan.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <p class="mb-2 py-5 fw-bold">BALIK BUTUAN 2025</p>
                                 </div>
+                                <a href="update-events.html" class="btn rounded-pill btn-danger px-5 py-3 text-white">See more</a>
                             </div>
                         </div>
                     </div>
@@ -182,9 +188,10 @@
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <img src="img/awarding.jpeg" class="img-fluid w-100 rounded" alt="">
-                                    <p class="mb-2 py-5">𝐓𝐡𝐞 𝐀𝐰𝐚𝐫𝐝𝐢𝐧𝐠 𝐨𝐟 𝐭𝐡𝐞 𝐓𝐨𝐮𝐫𝐢𝐬𝐦 𝐀𝐕𝐏 𝐚𝐧𝐝 𝐏𝐡𝐨𝐭𝐨 𝐂𝐨𝐧𝐭𝐞𝐬𝐭  </p>
+                                    <img src="img/donate-a-plant.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <p class="mb-2 py-5 fw-bold">DONATE A PLANT</p>
                                 </div>
+                                <a href="update-events.html" class="btn rounded-pill btn-danger px-5 py-3 text-white">See more</a>
                             </div>
                         </div>
                     </div>
@@ -212,15 +219,54 @@
             </div>
         </div>
         <!-- Footer Start -->
-        <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s" style="background-color: rgb(7, 7, 82);">
+        <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s" style="background-image: 
+                linear-gradient(rgba(32, 168, 224,0.5), rgba(17, 87, 143, 1)),
+                url('img/balanghai_festival.jpg');
+                background-size: cover;
+                background-position: center;">
             <div class="container pt-5">
-                <div class="row justify-content-center g-5">
-                    <!-- First Column: Logo and Social Media -->
-                    <div class="col-lg-3 col-md-6 text-center">
+                <div class="row justify-content-start g-5">
+                    <!-- First Column: Logo -->
+                    <div class="col-lg-3 col-md-6 text-start d-flex flex-column align-items-start" style="text-shadow: 2px 2px 4px #000000;">
                         <a href="index.html">
-                            <h1 class="text-white fw-bold d-block">Butuan City<span class="text-warning">Tourism</span></h1>
+                            <h1 class="text-white fw-bold d-block">Butuan<br>City<br><span style="color: #72BA41">Tourism</span></h1>
                         </a>
-                        <div class="d-flex justify-content-center hightech-link mt-3">
+                    </div>
+                    <!-- Second Column: Help Links -->
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <a href="#" class="h3 text-warning" style="text-shadow: 2px 2px 4px #000000;">Information</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <a href="#" class="py-3 text-light">
+                                <i class="fas fa-phone-alt text-warning me-2"></i>+639535899344
+                            </a>
+                            <a href="#" class="py-3 text-light">
+                                <i class="fas fa-envelope text-warning me-2"></i>ctcad@butuan.gov.ph
+                            </a>
+                            <a href="https://maps.app.goo.gl/WNU8cpqrR8zpDXTt8" class="pb-3 text-light">
+                                <i class="fas fa-map-marker-alt text-warning me-2"></i>Gov. Jose Aquino Sr. Building, City Sports Complex, Brgy. Libertad, Butuan City, Philippines
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Third Column: Navigation -->
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <div class="h3 text-warning" style="text-shadow: 2px 2px 4px #000000;">Navigation</div>
+                        <div class="mt-4 d-flex flex-column navi-link">
+                            <a href="index.html" class="mb-2 text-footer">Home</a>
+                            <a href="about.html" class="mb-2 text-footer">About</a>
+                            <a href="update-events.html" class="mb-2 text-footer">Updates and Events</a>
+                            <a href="visitors-guide.html" class="mb-2 text-footer">Visitors Guide</a>
+                            <a href="contact.html" class="mb-2 text-footer">Contact</a>
+                        </div>
+                        <div class="h3 text-warning mt-4" style="text-shadow: 2px 2px 4px #000000;">Help</div>
+                        <div class="mt-2 d-flex flex-column help-link">
+                            <a href="terms.html" class="mb-2 text-footer">Terms of Use and Privacy Policy</a>
+                        </div>
+                    </div>
+        
+                    <!-- Fourth Column: Connect with Us -->
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="h3 text-warning social-media" style="text-shadow: 2px 2px 4px #000000;">Connect with Us</div>
+                        <div class="d-flex justify-content-center social-link mt-3">
                             <a href="https://www.facebook.com/ButuanTourism" class="btn-light nav-fill btn btn-square rounded-circle me-2">
                                 <i class="fab fa-facebook-f text-primary"></i>
                             </a>
@@ -235,37 +281,14 @@
                             </a>
                         </div>
                     </div>
-                    <!-- Second Column: Help Links -->
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <a href="#" class="h3 text-warning">Help Link</a>
-                        <div class="mt-4 d-flex flex-column help-link">
-                            <a href="terms.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Terms of Use & Privacy Policy</a>
-                            <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>About us</a>
-                            <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Contact us</a>
-                        </div>
-                    </div>
-                    <!-- Third Column: Contact Information -->
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <a href="#" class="h3 text-warning">Contact Us</a>
-                        <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="https://maps.app.goo.gl/WNU8cpqrR8zpDXTt8" class="pb-3 text-light border-bottom border-primary">
-                                <i class="fas fa-map-marker-alt text-warning me-2"></i>Gov. Jose Aquino Sr. Building, City Sports Complex, Brgy. Libertad, Butuan City, Philippines
-                            </a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary">
-                                <i class="fas fa-phone-alt text-warning me-2"></i>+639535899344
-                            </a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary">
-                                <i class="fas fa-envelope text-warning me-2"></i>ctcad@butuan.gov.ph
-                            </a>
-                        </div>
-                    </div>
                 </div>
+        
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
-                    <div class="col-12 text-center"> <!-- Centering the copyright text -->
+                    <div class="col-12 text-center">
                         <span class="text-light">
                             <a href="#" class="text-warning">
-                                <i class="fas fa-copyright text-warning me-2"></i>Butuan City Tourism
+                                <i class="fas fa-copyright text-warning me-2"></i>Copyright of 2025 | Butuan City Tourism
                             </a>, All rights reserved.
                         </span>
                     </div>
