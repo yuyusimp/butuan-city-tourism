@@ -5,10 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        
+        {
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\Yan\\Desktop\\butuan-city-tourism\\index.html"
+            "file": "c:\\Users\\Yan\\Desktop\\butuan-city-tourism-1\\index.html"
         }
     ]
 }
