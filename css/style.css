@@ -20,6 +20,30 @@ input.form-control, textarea.form-control {
     outline: none;
 }
 
+/* Adjust position of location pin and Facebook logo */
+.location-pin {
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    position: absolute;
+}
+.location-pin {
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    position: absolute;
+}
+.facebook-logo {
+    bottom: 10px; /* Aligns with location pin */
+    right: 50px; /* Place near location pin, adjust as needed */
+    position: absolute;
+}
+.card-style {
+    height: 100%; /* Ensures all cards have the same height */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is evenly spaced */
+    padding: 20px; /* Adds padding for better spacing */
+}
 
 /*** Button Start ***/
 .btn {
