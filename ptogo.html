@@ -81,8 +81,7 @@
                                     <li><a href="todo.html" class="dropdown-item">Things to do</a></li>
                                     <li><a href="wts.html" class="dropdown-item">Where to Stay</a></li>
                                     <li><a href="ptogo.html" class="dropdown-item">Places to go</a></li>
-                                <li><a href="wheretoeat.html" class="dropdown-item">Where to eat</a></li>
-
+                                    <li><a href="wheretoeat.html" class="dropdown-item">Where to eat</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -96,23 +95,35 @@
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Places to go</h1>
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Place to go</h1>
             </div>
         </div>
-        <div class="container-fluid blog py-4">
+        
+             <!-- Background image (absolute layer) -->
+            <div class="position-absolute w-100 h-100" 
+                 style="background-image: url('img/background-boat.png'); background-repeat: no-repeat; background-position: bottom; background-size: cover; z-index: -1;">
+            </div>
+        <div class="container-fluid blog py-4"  style="background-color: #11578F; opacity: 90%;">
             <div class="container">
                 <div class="text-center mx-auto pb-4 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h1 class="text">Natural Landscapes</h1>
+                    <h1 class="text"></h1>
                 </div>
                 <div class="row g-5 justify-content-center align-items-center">
                     <!-- Left Side - Text Content -->
                     <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
-                        <div class="bg-light rounded p-4">
-                            <h3 class="fw-bold">Mt. Mayapay</h3>
+                        <div class="bg-light rounded p-4 text-center position-relative">
+                            <!-- Circular Logo -->
+                            <h3 class="fw-bold">Mount Mayapay</h3>
                             <p class="text-muted">
-                                Rising majestically over Butuan City, Mt. Mayapay offers breathtaking views and an adventurous trekking experience. 
-                                This ancient mountain is deeply tied to the region’s history and culture, making it a must-visit for hikers and nature enthusiasts. 
+                                Mount Mayapay is one of the most popular hiking destinations in the province of Agusan del Norte. 
+                                The mountain is standing 675 meters above sea level with its fascinating table-head summit. 
+                                The trek from the trail head to the peak of the mountain is about 2 hours following a gradually meandering rough road.<br>
+                                📍 Nong-nong, Butuan City <br>
                             </p>
+                            <!-- Location Pin -->
+                            <a href="https://maps.app.goo.gl/CZQyg8qkgvRz52777" target="_blank" class="position-absolute location-pin">
+                                <i class="fa fa-map-marker-alt text-white bg-primary p-2 rounded-circle" style="font-size: 24px;"></i>
+                            </a>
                         </div>
                     </div>
                     <!-- Right Side - Images -->
@@ -122,37 +133,117 @@
                                 <!-- Owl Carousel Wrapper -->
                                 <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s"  >
                                     <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (1).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
+                                        <img src="img/mayapay (1).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
                                     </div>
                                     <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (2).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
+                                        <img src="img/mayapay (2).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
                                     </div>
                                     <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (3).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
+                                        <img src="img/mayapay (3).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
                                     </div>
                                     <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (4).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
-                                    </div>
-                                    <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (5).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
-                                    </div>
-                                    <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (6).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
-                                    </div>
-                                    <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (7).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
-                                    </div>
-                                    <div class="blog-image-container" style="width: 90%;">
-                                        <img src="img/mayapay (8).jpg" class="img-fluid rounded" alt="Balangay Shrine Museum">
+                                        <img src="img/mayapay (4).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
+                        <div class="bg-light rounded p-4 text-center position-relative">
+                            <!-- Circular Logo -->
+                            <h3 class="fw-bold">MASAO BEACH</h3>
+                            <p class="text-muted">
+                                Butuan City, despite being rich in history, is admittedly lacking in beautiful beaches (and other sceneries) unlike her nearby towns and cities in Caraga region. 
+                                When you want to go to the nearest beach in Butuan, Masao is it. 
+                                It has black sand, with natural and unnatural debris scattered all over the shoreline- and hordes of people during weekends.
+                                📍 Masao, Butuan City, Agusan Del Norte<br>
+                            </p>
+                            <!-- Location Pin -->
+                            <a href="https://maps.app.goo.gl/gurE6JDGdWMPM3ee8" target="_blank" class="position-absolute location-pin">
+                                <i class="fa fa-map-marker-alt text-white bg-primary p-2 rounded-circle" style="font-size: 24px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right Side - Images -->
+                    <div class="col-lg-7 wow fadeIn" data-wow-delay=".3s">
+                        <div class="blog-item position-relative bg-light rounded p-3">
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <!-- Owl Carousel Wrapper -->
+                                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s"  >
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/masao (1).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/masao (2).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/masao (3).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/masao (4).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
+                        <div class="bg-light rounded p-4 text-center position-relative">
+                            <!-- Circular Logo -->
+                            <h3 class="fw-bold">AGUSAN RIVER PARK</h3>
+                            <p class="text-muted">
+                                The Agusan River stands as the primary waterway in northern Mindanao. In the past, it played a vital role in transportation and 
+                                log rafting during the height of the logging industry. 
+                                Today, the bridge near Butuan offers scenic views of this historic river.
+                                📍 Urduja Pob. (Brgy 9), Butuan City, Agusan Del Norte<br>
+                            </p>
+                            <!-- Location Pin -->
+                            <a href="https://maps.app.goo.gl/eRopiu2EDQWjHjtPA" target="_blank" class="position-absolute location-pin">
+                                <i class="fa fa-map-marker-alt text-white bg-primary p-2 rounded-circle" style="font-size: 24px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right Side - Images -->
+                    <div class="col-lg-7 wow fadeIn" data-wow-delay=".3s">
+                        <div class="blog-item position-relative bg-light rounded p-3">
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <!-- Owl Carousel Wrapper -->
+                                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s"  >
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/agusan (1).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/agusan (2).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/agusan (3).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/agusan (4).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/agusan (5).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                    <div class="blog-image-container" style="width: 90%;">
+                                        <img src="img/agusan (6).jpg" class="img-fluid rounded zoomable-image" alt="Natad Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-        
+        <!-- Modal for Zoomed Image -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <img id="zoomedImage" src="" class="img-fluid rounded" alt="Zoomed Image">
+                    </div>
+                </div>
+            </div>
+        </div>
               <!-- Footer Start -->
               <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s" style="background-image: linear-gradient(to bottom, rgba(32, 168, 224, 1), rgba(17, 87, 143, 1));">
                 <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s" style="background-image: 
@@ -247,5 +338,13 @@
             <script src="js/spinner.js"></script>
     
         </body>
+        <script>
+            document.querySelectorAll('.zoomable-image').forEach(image => {
+                image.addEventListener('click', function () {
+                    const modalImage = document.getElementById('zoomedImage');
+                    modalImage.src = this.src; // Set the modal image source to the clicked image's source
+                });
+            });
+        </script>
     
-    </html>    
+    </html>
